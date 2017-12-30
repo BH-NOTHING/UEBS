@@ -1,0 +1,258 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en" class="no-js"> <!--<![endif]--> 
+<head>
+	<meta charset=UTF-8"utf-8" />
+	<title>村村通商城电子商务平台管理后台</title>
+ <link href="http://img09.cct88588.com/upload/images/image/16/08/01/14700200490632117.ico" rel="shortcut icon" type="image/x-icon" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+	<meta name="MobileOptimized" content="320">   
+	<link href="font-awesome.min.css" tppabs="https://www.gdcct.com/css/bootstrap/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="bootstrap.min.css" tppabs="https://www.gdcct.com/css/bootstrap/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="uniform.default.css" tppabs="https://www.gdcct.com/css/bootstrap/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+<link href="style-metronic.css" tppabs="https://www.gdcct.com/css/bootstrap/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+<link href="style.css" tppabs="https://www.gdcct.com/css/bootstrap/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="style-responsive.css" tppabs="https://www.gdcct.com/css/bootstrap/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="plugins.css" tppabs="https://www.gdcct.com/css/bootstrap/css/plugins.css" rel="stylesheet" type="text/css"/>
+<link href="tasks.css" tppabs="https://www.gdcct.com/css/bootstrap/css/tasks.css" rel="stylesheet" type="text/css"/>
+<link href="default.css" tppabs="https://www.gdcct.com/css/bootstrap/css/themes/default.css" rel="stylesheet" type="text/css" id="style_color"/><link href="login.css" tppabs="https://res.gdcct.com/css/bootstrap/css/login.css" rel="stylesheet" type="text/css"/>
+    <link href="customstyle.css" tppabs="https://res.gdcct.com/css/bootstrap/css/customstyle.css" rel="stylesheet" type="text/css"/>
+    <link href="platformLogin.css" tppabs="https://res.gdcct.com/css/platform/platformLogin.css" rel="stylesheet" type="text/css"/>
+</head>
+<!-- BEGIN BODY -->
+<body class="login">
+	<div class="logo">
+		<!--20160829 start--> 
+		<div class="logo-group">
+        	<div class="logo-txt">
+	        	村村通商城平台管理后台</div>
+         </div>
+	</div>
+	<div class="content">
+		<form class="login-form form-horizontal"  method="post">
+        	<div class="form-group">
+                <div class="col-md-12">
+                	<h3 class="login-title">请输入您的账户密码</h3>
+                </div>
+			</div>
+            <div class="alert alert-danger display-hide" id="alertDanger">
+            	<i class="close fa fa-times pull-right"></i>
+				<span id="alertContents"></span>
+            </div>
+			<div class="form-group ">
+				<div class="input-icon left" style="border-left: 2px solid #35aa47 !important; width:400px; margin: 0 auto;">
+					<i class="fa fa-user"></i>
+					<input class="form-control" type="text" id="accountStr" placeholder="请输入登录账户"/>
+				</div>
+			</div>
+			<div class="form-group ">
+				<div class="input-icon left" style="border-left: 2px solid #35aa47 !important; width:400px; margin: 0 auto;">
+					<i class="fa fa-lock"></i>
+					<input class="form-control" type="password" id="password" placeholder="请输入登录密码"/>
+				</div>
+			</div>
+			<div class="form-group " id="inputCodeLi" style="display: none;">
+				<div class="input-icon left" style="border-left: 2px solid #35aa47 !important; width:400px; margin: 0 auto; overflow: hidden;">
+						<i class="fa fa-question-circle" id="checkImgCodeflag"></i>
+						<input class="form-control shortinput pull-left" type="text" name="inputCode" id="inputCode" placeholder="验证码" onblur="checkImgCode();"/>
+						<img class="pull-left" style="cursor: pointer;" id="validateCodeId" src="" width="100" height="45" />
+				</div>
+				
+			</div>
+			<div class="form-actions">
+				<label class="control-label col-md-3"> </label>
+				<div class="col-md-8 lbtn-group">
+					<button id="btnLogin" type="button" class="btn green pull-right">登 录&nbsp;&nbsp;&nbsp;<i class="m-icon-swapright m-icon-white"></i></button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!--20160829 start-->
+    <div class="copyright"><span id="copyrightYear">2016</span> © powered by 村村通商城</div>
+    <!--20160829 end-->
+	<script src="jquery-1.10.2.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="jquery-migrate-1.2.1.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+	<script src="bootstrap.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="twitter-bootstrap-hover-dropdown.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/bootstrap-hover-dropdown/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript" ></script>
+	<script src="jquery.slimscroll.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="jquery.blockui.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/jquery.blockui.min.js" type="text/javascript"></script>  
+	<script src="jquery.cookie.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/jquery.cookie.min.js" type="text/javascript"></script>
+	<script src="jquery.uniform.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/uniform/jquery.uniform.min.js" type="text/javascript" ></script>
+	<!-- BEGIN PAGE LEVEL PLUGINS -->
+	<script src="jquery.validate.min.js" tppabs="https://www.gdcct.com/css/bootstrap/plugins/jquery-validation/dist/jquery.validate.min.js" type="text/javascript"></script>	
+	<!-- END PAGE LEVEL PLUGINS -->
+	<script type="text/javascript" src="Coder.js" tppabs="https://www.gdcct.com/js/jquery/plugins/base/Coder.js"></script>
+	<script src="app.js" tppabs="https://www.gdcct.com/css/bootstrap/scripts/app.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+			//获取年份
+			$("#copyrightYear").html(new Date().getFullYear());
+			
+			function alertContent(alt){
+				$("#alertContents").html(alt);
+				$("#alertDanger").css("display","block");
+				$("#alertDanger").css("visibility","visible");
+			}
+			
+			//刷新验证码
+			function reloadImage(){
+				$('#validateCodeId').attr('src','/validateCode/validateCode.jspx?'+'id='+Math.random());
+			}
+			
+			//页面初始化验证码
+			reloadImage();
+			$('#validateCodeId').click(function(){
+				reloadImage();
+			});
+			
+			//校验验证码
+			function checkImgCode() {
+				var code = $('#inputCode').val();
+				var isEqual = false;
+				$.ajax({
+					url:'https://www.gdcct.com/validateCode/checkValidateCodeAjax.jspx',
+					type:'get',
+					async:false,
+					data:{inputCode:code,id:Math.random()},
+					dataType:'json',
+					success:function(response){
+						if(response.isEqual){
+							isEqual = true;
+							$("#checkImgCodeflag").removeClass("fa-question-circle").addClass("fa-check-circle");
+						}else{
+							isEqual = false;
+							reloadImage();
+						}
+					},
+					error:function(response){
+						alertContent("服务器繁忙！");
+						return false;
+					}
+				});
+				return isEqual;
+			}
+			
+			var errorCount = 0;
+			function onLogin(){
+				var accountStr = $('#accountStr').val();
+				var password = $('#password').val();
+				var wwwLoginStatus = false;
+				
+				if($.trim(accountStr) == ''){
+					alertContent('请输入登录账户！');
+					return false;
+				}else  if(errorCount >= 3 && !checkImgCode()){
+					$("#checkImgCodeflag").removeClass("fa-check-circle").addClass("fa-question-circle");
+					alertContent('验证码错误！');
+					return false;
+				}else if($.trim(password) == ''){
+					alertContent('请输入密码！');
+					return false;
+				}else{
+					$.ajax({
+						url:'/usercenter/loginAjax.jspx?randomId='+Math.random()+'&from=cooperation',
+						type:'get',
+						data:{accountStr:$.Coder.base64encode(accountStr), password:$.Coder.base64encode(password)},
+						dataType:'json',
+						async:false,
+						success:function(response){
+							if(response.isFail){
+								alertContent('账户或密码有误！');
+								errorCount++;
+								if(errorCount >= 3){
+									$('#inputCodeLi').css('display','block');
+								}
+								return false;
+							}else if(!response.haveCooperation){
+								alertContent('未开通合作方！');
+								return false;
+							}else{
+								wwwLoginStatus = true;
+								return response;
+							}
+						},
+						error:function(response){
+							alertContent("服务器繁忙！");
+							reloadImage();
+							return false;
+						}
+					});
+					
+					function checkLoginCallBack(){
+						if(!wwwLoginStatus){
+							setTimeout(checkLoginCallBack,500);
+						}else{
+							window.location = 'https://www.gdcct.com/platform/manage/chooseCoopLogin.jspx';
+						}
+					}
+					checkLoginCallBack();
+				}
+			}
+			
+			$("#inputCode").blur(function(){
+				if(errorCount >= 3 && $(this).val().length>3){
+					if(checkImgCode()){
+						$("#checkImgCodeflag").removeClass("fa-question-circle").addClass("fa-check-circle");
+						$("#alertDanger").css("display","none");
+					}else{
+						$("#checkImgCodeflag").removeClass("fa-check-circle").addClass("fa-question-circle");
+						alertContent("验证码错误！");
+						$(this).focus();
+					}
+				}
+			});
+			
+			$(".close").click(function(){
+				$("#alertDanger").css("display","none");
+			});
+			
+			$("#btnLogin").click(function(){
+				$("#alertDanger").css("visibility","hidden");
+				onLogin();
+			});
+			
+			$('#password').keydown(function(eventObj){
+				if (eventObj.keyCode == 13){
+					onLogin();
+				}
+			});
+			
+			$('#inputCode').keydown(function(eventObj){
+				if (eventObj.keyCode == 13){
+					onLogin();
+				}
+			});
+			
+			//显示错误信息
+			var msg = "";
+			if(msg != ""){
+				var domain = "";
+				if (confirm(msg)) {
+					if (domain == "") {
+						location = "login.jspx.htm"/*tpa=https://www.gdcct.com/platform/manage/login.jspx*/;
+					} else {
+						location = "" + "/platform/manage/login.jspx";
+					}
+				}
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+.login .content .input-icon {
+	border-left: 2px solid #35aa47 !important;
+	width: 400px !important;
+	margin: 0 auto !important;
+}
+
+.logo-group {
+	background: #0088d6;
+	height: 75px;
+	color: #fff;
+	font-size: 24px;
+	line-height: 75px;
+	width: 578px;
+	margin: 0 auto;
+}
+
+.login-title {
+	color: #666 !important;
+	font-size: 22px !important;
+	font-family: "Microsoft Yahei" !important;
+	text-align: left !important;
+	text-indent: 68px;
+}
+
+.lbtn-group {
+	padding-right: 9px !important;
+	margin-bottom: 30px;
+}
+
+.login .copyright {
+	color: #999;
+	font-size: 13px;
+	margin: 0 auto;
+	padding: 30px 10px 10px 10px;
+	text-align: center;
+	width: 578px;
+}
+
+.login-ft {
+	height: 40px;
+	background: #212121;
+	padding: 0 20px !important;
+}
+
+.footer-group {
+	display: inline-block;
+	float: left;
+	height: 100%;
+}
+
+.footer-group img {
+	display: inline-block;
+	float: left;
+}
+
+.login-ft-txt {
+	display: inline-block;
+	float: left;
+	line-height: 40px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.form-actions {
+	border-bottom: none !important;
+	padding: 0px 30px !important;
+}
+
+.logo-txt {
+	height: 75px;
+	overflow: hidden;
+}
+
+.logo-txt img {
+	display: block;
+	height: 75px;
+	margin: 0 auto;
+}
+
+#btnLogin {
+	margin-right: 8px !important;
+}
+
+.input-icon input {
+	padding-left: 40px !important;
+}
+.shortinput{
+	width:287px !important;
+	margin-right: 10px;
+}
+.alert-danger{
+	width: 398px !important;
+	margin: 0 auto 20px auto;
+}
+.close{
+	margin-top: 5px;
+}
