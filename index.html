@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://www.king.com/platform/manage/index.jspx -->
+<html lang="en" class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>电子商务平台管理后台++</title>
+ <link href="http://img09.cct88588.com/upload/images/image/16/08/01/14700200490632117.ico" rel="shortcut icon" type="image/x-icon">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<meta name="MobileOptimized" content="320">   
+	<link href="./files/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="./files/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="./files/uniform.default.css" rel="stylesheet" type="text/css">
+<link href="./files/style-metronic.css" rel="stylesheet" type="text/css">
+<link href="./files/style.css" rel="stylesheet" type="text/css">
+<link href="./files/style-responsive.css" rel="stylesheet" type="text/css">
+<link href="./files/plugins.css" rel="stylesheet" type="text/css">
+<link href="./files/tasks.css" rel="stylesheet" type="text/css">
+<link href="./files/default.css" rel="stylesheet" type="text/css" id="style_color"><!-- BEGIN PAGE LEVEL STYLES -->
+	<!-- 这里放页面引用到的css文件 -->
+	<!-- END PAGE LEVEL STYLES -->
+    <link href="./files/customstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body class="page-header-fixed page-sidebar-fixed page-footer-fixed" style="">
+	<!-- 头部start -->
+	
+
+
+<style type="text/css">
+/* 20160829 */ 
+.header_logo{   
+	display:inline-block;
+	float:left;
+	height:42px;
+	line-height: 42px;
+	color:#fff;
+	font-size: 20px;
+	text-indent: 20px;
+	font-weight: 500;
+}
+.header_logo img{
+	display: block;
+}
+</style>
+<div class="header navbar navbar-inverse navbar-fixed-top">
+	<div class="header-inner">
+	    <div class="header_logo">
+	    	商城平台管理后台
+	    	
+	    </div>
+		<a href="javascript:void(0);" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<img src="./files/menu-toggler.png" alt="">
+		</a> 
+		<!-- 主题设置 -->
+		<div class="theme-panel hidden-xs hidden-sm">
+			<div class="toggler" title="设置操作界面"></div>
+			<div class="toggler-close"></div>
+			<div class="theme-options">
+				<div class="theme-option theme-colors clearfix">
+					<span>界面主题颜色：</span>
+					<ul>
+						<li class="color-black current color-default" data-style="default"></li>
+						<li class="color-blue" data-style="blue"></li>
+						<li class="color-brown" data-style="brown"></li>
+						<li class="color-purple" data-style="purple"></li>
+						<li class="color-grey" data-style="grey"></li>
+						<li class="color-white color-light" data-style="light"></li>
+					</ul>
+				</div>
+				<div class="theme-option">
+					<span>界面布局：</span>
+					<select class="layout-option form-control input-small">
+						<option value="fluid" selected="selected">平铺</option>
+						<option value="boxed">居中</option>
+					</select>
+				</div>
+				<div class="theme-option">
+					<span>　　头部：</span>
+					<select class="header-option form-control input-small">
+						<option value="fixed" selected="selected">固定</option>
+						<option value="default">滚动</option>
+					</select>
+				</div>
+				<div class="theme-option">
+					<span>　侧边栏：</span>
+					<select class="sidebar-option form-control input-small">
+						<option value="fixed" selected="selected">固定</option>
+						<option value="default">滚动</option>
+					</select>
+				</div>
+				<div class="theme-option">
+					<span>　　底部：</span>
+					<select class="footer-option form-control input-small">
+						<option value="fixed" selected="selected">固定</option>
+						<option value="default">滚动</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<!-- 主题设置 END -->
+		<ul class="nav navbar-nav pull-right">
+               <li class="dropdown">欢迎您，<strong>商城</strong>|</li>
+               <li class="dropdown"><a href="https://www.king.com/index.jspx" target="_blank">浏览商城</a>|</li>
+               <li class="dropdown"><a href="https://www.king.com/platform/manage/changePasswordPage.jspx">修改密码</a>|</li>
+               <li class="dropdown"><a id="btnLogout" href="javascript:;">注销登录</a>|</li>
+               <li class="dropdown"><a href="https://www.king.com/info/343.htm" target="_blank">帮助</a></li>
+               
+	               <li class="dropdown">
+						<a href="https://www.king.com/platform/manage/index.jspx#" class="cms-dropdown-hover" data-hover="dropdown">切换管理平台 <i class="fa fa-retweet"></i></a>
+						<ul class="dropdown-menu extended notification">
+							<li>
+								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 205px;"><ul class="dropdown-menu-list scroller" style="height: 205px; overflow: hidden; width: auto;">
+										
+									 
+										<li>  
+										    <p>商家管理平台用户：</p>
+											
+											    <a href="https://www.king.com/shop/manage/shopLogin.jspx?shopId=16144" target="_blank">
+													<i class="fa fa-user"></i>
+													   测试店铺(超级管理员)
+													<i class="m-icon-swapright"></i>
+										        </a>
+											
+										</li>
+									 		
+								</ul><div class="slimScrollBar" style="background: rgb(161, 178, 189); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 205px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+							</li>
+			            </ul>
+			       </li>
+		       
+	</ul></div>
+</div>
+<script type="text/javascript" src="./files/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//注销
+		$('#btnLogout').click(function(){
+			if(window.confirm("是否注销登陆")){
+				$.ajax({
+					url:'/usercenter/logout.jspx?randomId='+Math.random(),
+					type:'get',
+					async:false,
+					dataType:'json',
+					success:function(response){
+						window.location = 'https://www.king.com/platform/manage/login.jspx';
+					},
+					error:function(response){
+						alert("服务器繁忙！");
+					}
+				});
+			}
+		});
+	});
+</script><!-- 头部end -->
+	<div class="clearfix"></div>
+	<!-- 内容 -->
+	<div class="page-container">
+		<!-- 侧边栏 -->
+		
+
+
+
+<div class="page-sidebar navbar-collapse collapse">
+	<!-- BEGIN SIDEBAR MENU -->        
+	<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 518px;"><ul class="page-sidebar-menu" style="overflow: hidden; width: auto; height: 518px;">
+		<li>
+			<div class="ind-side-date">
+				<p>2017-12-28 星期四</p>
+			</div>
+			<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+			<div class="sidebar-toggler hidden-phone"></div>
+			<!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+		</li>
+		<li class="active ">
+			<a href="https://www.king.com/platform/manage/index.jspx">
+			<i class="fa fa-home"></i> 
+			<span class="title">管理首页</span>
+			<span class="selected"></span>
+			</a>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-group"></i> 
+			<span class="title">商家管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/shopList.jspx">店铺列表</a>
+				</li>
+				
+				<li class="">
+					<a href="https://www.king.com/platform/manage/shopNoticeList.jspx">公告列表</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-list-alt"></i> 
+			<span class="title">商品管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/goodsList.jspx">商品列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/marketCategory.jspx">商品分类</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/loadGoodsModelList.jspx">商品模型</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/brandList.jspx">品牌库</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-shopping-cart"></i> 
+			<span class="title">订单管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/mkOrderList.jspx">订单列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/refundmentList.jspx">商品退换货列表</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-sitemap"></i> 
+			<span class="title">资讯管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/infoList.jspx">资讯列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/infoCategoryList.jspx">资讯栏目分类列表</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+				<i class="fa fa-rmb"></i> 
+				<span class="title">虚拟货币</span>
+				<span class="arrow "></span>
+			</a>
+			<ul class="sub-menu">
+			
+				<li class="">
+					<a href="https://www.king.com/platform/manage/usrWltLogLs.jspx">电子钱包日志列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/usrWltMnge.jspx">电子钱包管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/cashCouponList.jspx">现金券日志列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/cashCouponManagerJobList.jspx">现金券管理</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-rmb"></i> 
+			<span class="title">支付管理</span>
+			<span class="arrow "></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/paymentManage.jspx">支付方式管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/paymentPluginList.jspx">支付方式列表</a>
+				</li>
+			</ul>
+		</li>
+		
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-user"></i> 
+			<span class="title">会员管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/userList.jspx">会员列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/mebrPtMnge.jspx">会员积分管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/mebrPtLogLs.jspx">会员积分日志列表</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-phone"></i> 
+			<span class="title">客服管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/productConsultList.jspx">咨询管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/commentList.jspx">评论管理</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-briefcase"></i> 
+			<span class="title">营销管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/orderPromotionList.jspx">订单促销活动列表</a>
+				</li>
+				
+				<li class="">
+					<a href="https://www.king.com/platform/manage/goodsPromoteRuleList.jspx">商品促销规则列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/cashcouponActList.jspx">现金券活动列表</a>
+				</li>
+				
+				<li class="">
+					<a href="https://www.king.com/platform/manage/cashcouponActLogList.jspx">现金券活动日志</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-file"></i> 
+			<span class="title">页面管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/floorDataList.jspx">首页管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/imageList.jspx">图片管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/updatePlatformInfoUI.jspx">平台信息管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/blogRollUI.jspx">友情链接</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-building"></i> 
+			<span class="title">频道管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/channelLs.jspx">频道列表</a>
+				</li>
+			</ul>
+		</li>
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-bar-chart-o"></i> 
+			<span class="title">统计报表</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/ordStmOvView.jspx">销售统计报表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/prdtStatement.jspx">商品统计报表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/cateStatement.jspx">商品分类统计报表</a>
+				</li>
+			</ul>
+		</li>	
+		<li class="">
+			<a href="javascript:;">
+			<i class="fa fa-file"></i> 
+			<span class="title">财务管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/shopFinancialManageList.jspx">商家结算报表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/pgPayInfoList.jspx">第三方订单支付列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/userPointsMonthList.jspx">用户积分统计列表</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/userWalletMonthList.jspx">电子钱包统计列表</a>
+				</li>
+			</ul>
+		</li>
+		
+			<li class="">
+				<a href="javascript:;">
+				<i class="fa fa-list"></i> 
+				<span class="title">微商城管理</span>
+				<span class="arrow"></span>
+				</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/ecMicroMallInfoSetting.jspx">信息管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/ecMicroMallShopStyle.jspx">首页装修</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/ecMicroMallGoodsCategoryList.jspx">商品分类管理</a>
+					</li>
+				</ul>
+			</li>
+		
+		
+		<li class="">
+			<a class="active" href="javascript:;">
+			<i class="fa fa-cogs"></i> 
+			<span class="title">系统管理</span>
+			<span class="arrow"></span>
+			</a>
+			<ul class="sub-menu">
+				<li class="">
+					<a href="https://www.king.com/platform/manage/powerManage.jspx">权限管理</a>
+				</li>
+				<li class="">
+					<a href="https://www.king.com/platform/manage/serviceMailConfigInfo.jspx">客服邮件设置</a>
+				</li>
+			</ul>
+		</li>
+		
+			<li>
+				<a href="https://www.king.com/platform/manage/ecShareIndex.jspx">
+				<i class="fa  fa-unlink"></i> <span class="title">
+				进入供应链共享平台</span>
+				</a>
+			</li>
+		
+		
+	</ul><div class="slimScrollBar" style="background: rgb(161, 178, 189); width: 7px; position: absolute; top: 0px; opacity: 0.3; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 365.067px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+	<!-- END SIDEBAR MENU -->
+</div><!-- 侧边栏 END -->
+		<!-- 主内容 -->
+		<div class="page-content">
+			<!-- 面包屑-->
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="page-breadcrumb breadcrumb">
+						<li>
+							<i class="fa fa-home"></i>
+							<span>所在位置：</span> 
+						</li>
+						<li>
+							<a href="https://www.king.com/platform/manage/index.jspx">首页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 面包屑 END-->
+			<!-- 内容展示 -->
+			<div class="row ">
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet box purple">
+						<div class="portlet-title">
+							<div class="caption"><i class="fa fa-shopping-cart"></i>商品信息</div>
+							<div class="actions">
+								<div class="btn-group">
+									<a class="btn btn-sm default" href="https://www.king.com/platform/manage/goodsList.jspx">
+									查看更多
+									<i class="fa fa-angle-double-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover">
+									<tbody>
+										<tr>
+											<td class="active" width="25%">出售中的商品</td>
+											<td class="warning" width="25%"><a class="alink-red" href="https://www.king.com/platform/manage/goodsList.jspx?status=1&amp;checkStatus=1&amp;deleteStatus=-1">2160</a></td>
+											<td class="active" width="25%">待审核的商品</td>
+											<td class="warning" width="25%"><a class="alink-red" href="https://www.king.com/platform/manage/goodsList.jspx?checkStatus=0&amp;deleteStatus=-1&amp;status=-1">419</a></td>
+										</tr>
+										<tr>
+											<td class="active">已下架的商品</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/goodsList.jspx?status=-1&amp;checkStatus=1&amp;deleteStatus=-1">11964</a></td>
+											<td class="active">审核不通过的商品</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/goodsList.jspx?checkStatus=-1&amp;deleteStatus=-1">577</a></td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet box red">
+						<div class="portlet-title">
+							<div class="caption"><i class="fa fa-shopping-cart"></i>订单信息</div>
+							<div class="actions">
+								<div class="btn-group">
+									<a class="btn btn-sm default" href="https://www.king.com/platform/manage/mkOrderList.jspx">
+									查看更多
+									<i class="fa fa-angle-double-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover">
+									<tbody>
+										<tr>
+											<td class="active" width="25%">等待配货订单</td>
+											<td class="warning" width="25%"><a class="alink-red" href="https://www.king.com/platform/manage/mkOrderList.jspx?logisticsStatus=0&amp;payStatus=2">61</a></td>
+											<td class="active" width="25%">等待发货订单</td>
+											<td class="warning" width="25%"><a class="alink-red" href="https://www.king.com/platform/manage/mkOrderList.jspx?logisticsStatus=1&amp;payStatus=2">24</a></td>
+										</tr>
+										<tr>
+											<td class="active">等待收货订单</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/mkOrderList.jspx?logisticsStatus=3&amp;payStatus=2">0</a></td>
+											<td class="active">等待付款订单</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/mkOrderList.jspx?payStatus=0&amp;orderStatus=1">1091</a></td>
+										</tr>
+										<tr>
+											<td class="active">交易完成订单</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/mkOrderList.jspx?orderStatus=5">27185</a></td>
+											<td class="active">等待退款售后申请</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/refundmentList.jspx?status=0&amp;checkStatus=1&amp;ref2Way=1">2</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="row ">
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet box green">
+						<div class="portlet-title">
+							<div class="caption"><i class="fa fa-comments"></i>评论留言</div>
+							<div class="actions">
+								<div class="btn-group">
+									<a class="btn btn-sm default" href="https://www.king.com/platform/manage/commentList.jspx">
+									查看更多
+									<i class="fa fa-angle-double-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover">
+									<tbody>
+										<tr>
+											<td class="active" width="25%">待回复评论</td>
+											<td class="warning" width="75%"><a class="alink-red" href="https://www.king.com/platform/manage/commentList.jspx?isStatus=4">44810</a></td>
+										</tr>
+										<tr>
+											<td class="active">待回复咨询</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/productConsultList.jspx?isReply=-1">13</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="portlet box blue">
+						<div class="portlet-title">
+							<div class="caption"><i class="fa fa-star"></i>店铺信息</div>
+							<div class="actions">
+								<div class="btn-group">
+									<a class="btn btn-sm default" href="https://www.king.com/platform/manage/shopList.jspx">
+									查看更多
+									<i class="fa fa-angle-double-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="table-responsive">
+								<table class="table table-bordered table-hover">
+									<tbody>
+										<tr>
+											<td class="active" width="25%">待审核店铺</td>
+											<td class="warning" width="75%"><a class="alink-red" href="https://www.king.com/platform/manage/shopList.jspx?status=0">16</a></td>
+										</tr>
+										<tr>
+											<td class="active">已开通店铺</td>
+											<td class="warning"><a class="alink-red" href="https://www.king.com/platform/manage/shopList.jspx?status=10">148</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="row ">
+				<div class="col-md-12 col-sm-12">
+					<div class="portlet box light-grey tasks-widget">
+						<div class="portlet-title">
+							<div class="caption"><i class="fa fa-bullhorn"></i>商城公告</div>
+							<div class="actions">
+								<div class="btn-group">
+									<a class="btn btn-sm default" href="https://www.king.com/platform/manage/shopNoticeList.jspx">
+									查看更多
+									<i class="fa fa-angle-double-right"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="portlet-body">
+							<div class="task-content">
+								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 403px;"><div class="scroller" style="overflow: hidden; width: auto; height: 403px;">
+									<ul class="task-list cms-info-list">
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=809">[<font color="red">01.03更新</font>]2017春节假期工作安排通知</a></span>
+												<span class="date">[1-3]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=729">2016年春节放假通知</a></span>
+												<span class="date">[1-21]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=689">[<font color="red">10.28更新</font>]爽购</a></span>
+												<span class="date">[10-28]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=629">平台放假通知</a></span>
+												<span class="date">[2-12]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=610">促销功能使用说明part2</a></span>
+												<span class="date">[10-20]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=609">促销功能使用说明part1</a></span>
+												<span class="date">[10-20]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=591">“会员日”专题活动火热报名中</a></span>
+												<span class="date">[8-28]</span>
+												<span class="label label-sm label-success">活动</span></div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=589">商家后台操作视频指导</a></span>
+												<span class="date">[8-20]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=570">运费议价功能</a></span>
+												<span class="date">[6-9]</span>
+												</div>
+										</li>
+										<li>
+											<i class="fa fa-caret-right"></i>
+											<div class="task-title">
+												<span class="task-title-sp"><a href="https://www.king.com/platform/manage/shopNoticeDetail.jspx?id=569">世界杯专题活动报名中</a></span>
+												<span class="date">[6-5]</span>
+												<span class="label label-sm label-success">活动</span></div>
+										</li>
+										</ul>
+								</div><div class="slimScrollBar" style="background: rgb(161, 178, 189); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 403px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 内容展示 END -->
+		</div>
+		<!-- 主内容 END -->
+	</div>
+	<!-- 内容 END -->
+	<!-- 底部 -->
+	
+
+
+<script>$(function(){$("#copyrightFootYear").html(new Date().getFullYear());});</script>
+<div class="footer">
+	<div class="footer-inner"><span id="copyrightFootYear">2017</span> © <a href="https://www.king.com/" target="_blsnk">/www.gdcct.com</a></div>
+	<div class="footer-tools">
+		<span class="go-top">
+		<i class="fa fa-angle-up"></i>
+		</span>
+	</div>
+</div><!-- 底部 END --> 
+	<!--[if lt IE 9]>
+<script src="/css/bootstrap/plugins/respond.min.js"></script>
+<script src="/css/bootstrap/plugins/excanvas.min.js"></script> 
+<![endif]-->   
+<script src="./files/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="./files/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="./files/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
+<script src="./files/bootstrap.min.js" type="text/javascript"></script>
+<script src="./files/twitter-bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+<script src="./files/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="./files/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="./files/jquery.cookie.min.js" type="text/javascript"></script>
+<script src="./files/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="./files/app.js" type="text/javascript"></script><!-- BEGIN PAGE LEVEL PLUGINS -->
+	<!-- 这里放页面引用到的js文件 -->
+	<!-- BEGIN PAGE LEVEL PLUGINS --> 
+	<script>
+		jQuery(document).ready(function() {    
+		   App.init();
+		});
+	</script>
+
+</body></html>
